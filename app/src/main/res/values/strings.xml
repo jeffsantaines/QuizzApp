@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="Question1">1. What do you call the part of the roof that has been highlighted below?</string>
+    <string name="Question2">2. What is the minimum recommended roof pitch for most high rib profiled roof?</string>
+</resources>
