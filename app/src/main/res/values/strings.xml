@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Quizz App</string>
-    <string name="Question1">1. What do you call the part of the roof that has been highlighted below?</string>
+    <string name="Question1">1. What do you call the part of the roof which have been marked with circles as shown below?</string>
     <string name="Question2">2. What is the minimum recommended roof pitch for most high rib profiled roof?</string>
+    <string name="Question3">3. Select the following longrun which is considered as a high-rib profile.</string>
+    <string name="dd400">DD400</string>
+    <string name="kliplock">Kliplock</string>
+    <string name="trimdek">Trimdek</string>
+    <string name="Question4">4. True of false are NZ Steel and Pacific Steel supplies raw materials to various roofing manufacturers in New Zealand?</string>
 </resources>
