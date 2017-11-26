@@ -15,18 +15,19 @@
             android:id="@+id/question1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"
             android:text="@string/Question1"
             android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/question1_image"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/simpleHipRoof" />
+            android:rotation="90"
+            android:src="@drawable/simple_hip_roof" />
 
         <RadioGroup
             android:id="@+id/rbGroup1"
@@ -40,36 +41,34 @@
                 android:id="@+id/question1_rb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Ridges" />
 
             <RadioButton
                 android:id="@+id/question1_rb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Hips" />
 
             <RadioButton
                 android:id="@+id/question1_rb3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Valleys" />
 
             <RadioButton
                 android:id="@+id/question1_rb4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="Barges" />
 
         </RadioGroup>
 
         <Button
+            android:id="@+id/submit_button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:onClick="onSubmitButton1Clicked"
             android:padding="16dp"
             android:text="Submit" />
 
@@ -77,14 +76,15 @@
             android:id="@+id/question2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"
             android:text="@string/Question2"
             android:textSize="20sp" />
 
         <EditText
             android:layout_width="150dp"
+            android:id="@+id/editTextAnswer2"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:background="#EEF"
@@ -92,9 +92,11 @@
             android:inputType="number" />
 
         <Button
+            android:id="@+id/submit_button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:onClick="onSubmitButton2Clicked"
             android:padding="16dp"
             android:text="Submit" />
 
@@ -118,39 +120,38 @@
                 android:id="@+id/checkbox_dd400"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/dd400" />
 
             <CheckBox
                 android:id="@+id/checkbox_kliplock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/kliplock" />
 
             <CheckBox
                 android:id="@+id/checkbox_trimdek"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onCheckboxClicked"
                 android:text="@string/trimdek" />
 
         </LinearLayout>
 
         <Button
+            android:id="@+id/submit_button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
             android:layout_gravity="center_horizontal"
+            android:onClick="onSubmitButton3Clicked"
+            android:padding="16dp"
             android:text="Submit" />
 
         <TextView
             android:id="@+id/question4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
             android:paddingLeft="16dp"
             android:paddingTop="16dp"
-            android:paddingBottom="16dp"
             android:text="@string/Question4"
             android:textSize="20sp" />
 
@@ -166,22 +167,22 @@
                 android:id="@+id/question4_rb1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="True" />
 
             <RadioButton
                 android:id="@+id/question4_rb2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="onRadioButtonClicked"
                 android:text="False" />
 
         </RadioGroup>
 
         <Button
+            android:id="@+id/submit_button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:onClick="onSubmitButton4Clicked"
             android:padding="16dp"
             android:text="Submit" />
 
