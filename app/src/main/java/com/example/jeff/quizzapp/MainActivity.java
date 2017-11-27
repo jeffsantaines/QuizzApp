@@ -12,7 +12,14 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    int testScore = 0;
+    int testScore1 = 0;
+    int testScore2 = 0;
+    int testScore3 = 0;
+    int testScore4 = 0;
+    int totalScore = testScore1 + testScore2 + testScore3 + testScore4;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +30,12 @@ public class MainActivity extends AppCompatActivity {
     public void onSubmitButton1Clicked(View view) {
         RadioButton radioButton2 = (RadioButton) findViewById(R.id.question1_rb2);
         if (radioButton2.isChecked()) {
-            testScore = testScore + 1;
-            Toast.makeText(this, "Your answer is CORRECT! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            testScore1 = 1;
+            totalScore = testScore1 + testScore2 + testScore3 + testScore4;
+            Toast.makeText(this, "Your answer is CORRECT! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
 
         } else {
-            Toast.makeText(this, "Your answer is WRONG! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your answer is WRONG! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         }
 
     }
@@ -38,10 +46,12 @@ public class MainActivity extends AppCompatActivity {
         String result = edit.getText().toString();
 
         if (result.equals("3")) {
-            testScore = testScore + 1;
-            Toast.makeText(this, "Your answer is CORRECT! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            testScore2=1;
+            totalScore = testScore1 + testScore2 + testScore3 + testScore4;
+
+            Toast.makeText(this, "Your answer is CORRECT! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Your answer is WRONG! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your answer is WRONG! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -51,21 +61,25 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkbox_Trimdek = findViewById(R.id.checkbox_trimdek);
 
         if (checkbox_DD400.isChecked() && checkbox_Kliplock.isChecked() && !(checkbox_Trimdek.isChecked())) {
-            testScore = testScore + 1;
-            Toast.makeText(this, "Your answer is CORRECT! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            testScore3 = 1;
+            totalScore = testScore1 + testScore2 + testScore3 + testScore4;
+
+            Toast.makeText(this, "Your answer is CORRECT! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Your answer is WRONG! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your answer is WRONG! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         }
     }
 
     public void onSubmitButton4Clicked(View view) {
         RadioButton radioButton_true = (RadioButton) findViewById(R.id.question4_rb1);
         if (radioButton_true.isChecked()) {
-            testScore = testScore + 1;
-            Toast.makeText(this, "Your answer is CORRECT! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            testScore4 = 1;
+            totalScore = testScore1 + testScore2 + testScore3 + testScore4;
+
+            Toast.makeText(this, "Your answer is CORRECT! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
 
         } else {
-            Toast.makeText(this, "Your answer is WRONG! Score: " + testScore + "/4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Your answer is WRONG! Score: " + totalScore + "/4", Toast.LENGTH_SHORT).show();
         }
 
     }
